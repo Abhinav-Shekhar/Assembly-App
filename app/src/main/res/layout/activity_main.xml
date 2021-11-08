@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,43 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="15dp"
+        android:background="#1599EA"
+        android:text="FAN"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fan"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A ceiling fan is a mechanical fan mounted on the ceiling of a room or space, usually electrically powered, that uses hub-mounted rotating blades to circulate air. They cool people effectively by increasing air speed. Fans do not reduce air temperature or relative humidity, unlike air-conditioning equipment but create a cooling effect by helping to evaporate sweat and increase heat exchange via convection. Fans may add a small amount of heat to the room due to friction and waste heat from the motor. Fans use significantly less power than air conditioning as cooling air is thermodynamically expensive. In the winter a ceiling fan can also be used to bring warm air, which naturally rises, back down to occupants. This can affect both thermostat readings and occupants' comfort, thereby improving climate control energy efficiency."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:justificationMode="inter_word"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
